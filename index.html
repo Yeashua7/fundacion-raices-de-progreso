@@ -52,7 +52,7 @@
         <div class="header-content">
           <div class="logo">
             <img
-              src="assets/images/logo.png"
+              src="assets/css/js/images/Logo raipro.png"
               alt="Fundación Raíces de Progreso Logo"
               class="logo-img"
             />
@@ -183,7 +183,7 @@
             </div>
             <div class="about-image">
               <img
-                src="assets/images/about-us.jpg"
+                src="assets/css/js/images/Logo raipro.png"
                 alt="Equipo de la fundación trabajando"
                 class="img-responsive"
               />
@@ -324,7 +324,7 @@
           <div class="gallery-grid">
             <div class="gallery-item">
               <img
-                src="assets/images/gallery-1.jpg"
+                src="assets/css/js/images/6.jpg"
                 alt="Construcción de vivienda"
                 class="gallery-img"
               />
@@ -354,7 +354,7 @@
             </div>
             <div class="gallery-item">
               <img
-                src="assets/images/gallery-4.jpg"
+                src="assets/css/js/images/7.jpg"
                 alt="Actividad deportiva"
                 class="gallery-img"
               />
@@ -383,77 +383,101 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contacto" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Contacto</h2>
-            <p>Escríbenos y sé parte del cambio</p>
-          </div>
-          <div class="contact-content">
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <h4>Dirección</h4>
-                  <p>San Salvador, El Salvador</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <h4>Teléfono</h4>
-                  <p>+503 7937-0883</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h4>Email</h4>
-                  <p>jkgroupsv@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" />
-              </div>
-              <div class="form-group">
-                <label for="asunto">Asunto *</label>
-                <select id="asunto" name="asunto" required>
-                  <option value="">Selecciona un asunto</option>
-                  <option value="voluntario">Quiero ser voluntario</option>
-                  <option value="donacion">Quiero hacer una donación</option>
-                  <option value="informacion">Solicitar información</option>
-                  <option value="otro">Otro</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="mensaje">Mensaje *</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Enviar Mensaje
-              </button>
-            </form>
-          </div>
+      <!-- Sección de Contacto -->
+<section id="contacto" class="contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas o quieres colaborar? ¡Escríbenos!</p>
         </div>
-      </section>
-    </main>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Dirección</h4>
+                        <p>Colonia Escalón, San Salvador<br>El Salvador</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Teléfono</h4>
+                        <p>+503 2222-3333</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>jkgroupsv@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FORMULARIO DE CONTACTO -->
+            <div class="contact-form-container">
+                <form class="contact-form" action= "https://formspree.io/f/xgvykoga" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="donacion">Quiero hacer una donación</option>
+                            <option value="voluntario">Quiero ser voluntario</option>
+                            <option value="beneficiario">Necesito ayuda de la fundación</option>
+                            <option value="colaboracion">Propuesta de colaboración</option>
+                            <option value="informacion">Solicitar información</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    
+                    <!-- Campo oculto para identificar el formulario -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de Fundación Raíces de Progreso">
+                    
+                    <!-- Redirección después del envío -->
+                    <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+                    
+                    <!-- Evitar spam -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -462,7 +486,7 @@
           <div class="footer-section">
             <div class="footer-logo">
               <img
-                src="assets/images/logo-white.png"
+                src="assets/css/js/images/Logo raipro.png"
                 alt="Fundación Raíces de Progreso"
                 class="footer-logo-img"
               />
