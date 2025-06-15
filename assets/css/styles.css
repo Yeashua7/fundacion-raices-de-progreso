@@ -455,6 +455,7 @@ margin-top: -0.5rem; /* Acerca el h2 al h1 */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-xl);
+    align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
 }
 
 .program-card {
@@ -464,11 +465,9 @@ margin-top: -0.5rem; /* Acerca el h2 al h1 */
     box-shadow: var(--shadow-md);
     transition: var(--transition-base);
     position: relative;
-}
-
-.program-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
 }
 
 .program-icon {
@@ -495,6 +494,12 @@ margin-top: -0.5rem; /* Acerca el h2 al h1 */
 
 .program-content {
     padding: var(--spacing-xl);
+    flex: 1 1 auto; /* Hace que el contenido ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .program-content h3 {
@@ -577,7 +582,7 @@ margin-top: -0.5rem; /* Acerca el h2 al h1 */
 }
 
 .gallery-img {
-    width: 100%;
+    width: 125%;
     height: 250px;
     object-fit: cover;
 }
