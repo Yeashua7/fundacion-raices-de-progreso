@@ -2,18 +2,6 @@
 
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all components
-    initNavigation();
-    initScrollAnimations();
-    initCounterAnimations();
-    initContactForm();
-    initGallery();
-    initSmoothScroll();
-});
-
-// ===== NAVIGATION =====
-function initNavigation() {
-    const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -562,5 +550,29 @@ document.addEventListener('click', function(e) {
         });
     }
 });
+
+
+// ===== BACK TO TOP =====
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+}
 
 console.log('Fundación Raíces de Progreso - Website loaded successfully!');
